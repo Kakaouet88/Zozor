@@ -1,0 +1,371 @@
+/* POLICES */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* GENERAL */
+#blocpage
+{
+width: 900px;
+margin: auto;
+}
+body
+{
+    background: url(images/fond_jaune.png);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: black;
+}
+#section h2, footer h2, nav a, header h2
+{
+    text-transform: uppercase;
+    font-family: 'Dayrom';
+    font-weight: normal;
+}
+
+/* TITRE */
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: saddlebrown solid 2px;
+}
+
+#titreprincipal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#titrelogo img
+{
+    width: 60px;
+    height: 60px;
+}
+
+#titrelogo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+header h2
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0px;
+    text-transform: capitalize;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+
+/* NAV */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: rgb(167, 25, 25);
+    text-decoration: underline;
+}
+
+/* BANNIERE */
+
+#banniereimage
+{
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    height: 200px;
+    margin: 20px 0 20px 0;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 2px 4px 10px gray;
+}
+
+#bannieredescription
+{
+    position: absolute;
+    bottom: 0;
+    width: 98.2%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 30px;
+    background-color: rgba(14, 14, 14, 0.6);
+    color: seashell;
+    font-weight: normal;
+    font-size: 0.8em;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+#banniereimage a
+{
+    text-decoration: none;
+    color: seashell;
+}
+
+#boutonrouge
+{
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    height: 25px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 20px;
+    text-align: center;
+    padding: 4px 8px 0px 8px;
+}
+#boutonrouge img
+{
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+/* SECTION */
+
+#section
+{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    flex: 3;
+    margin-right: 15px;
+}
+
+#epingle
+{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+aside
+{
+    flex: 1.2;
+    margin-left: 15px;
+    background: rgba(65, 65, 60, 0.6);
+    position: relative;
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 2px 4px 10px gray;
+    color: honeydew;
+    height: 490px;
+}
+#flèchebulle
+{
+    position: absolute;
+    left: -11px;
+}
+aside h2
+{
+    font-size: 1.05em;
+    text-align: center;
+}
+#zozorbg
+{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+#zozorbg img
+{
+    border: solid black 1px;
+}
+aside a
+{
+    margin: 0px 0px 0px 5px;
+}
+#rs
+{
+    padding-top: 15px;
+}
+
+/* FOOTER */
+
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+footer h2
+{
+    font-size: 0.9em;
+}
+#tweet, #photos, #amis
+{
+    border: black solid 0px;
+    box-shadow: 2px 2px 8px gray;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#amis
+{
+    width: 39%;
+}
+
+#photos
+{
+    width: 38%;
+}
+
+#tweet
+{
+    width: 23%;
+}
+
+#tweet, #photos
+{
+    margin-right: 5px;
+}
+em
+{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#photos img
+{
+    margin: 3px;
+    border: black solid 1px;
+}
+
+#photos p
+{
+    text-align: center;
+}
+
+#listes
+{
+    display: flex;
+    justify-content: space-between;
+}
+#listes ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    color: rgb(148, 21, 21);
+    padding-left: 12px;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1024px)
+{
+    #blocpage
+    {
+        width: auto;
+    }
+    nav
+    {
+        text-align: left;
+        width: auto;
+    }
+    nav ul
+    {
+        flex-direction: column;
+    }
+    nav a
+    {
+        font-size: 1em;
+    }
+    nav a:hover
+    {
+        text-decoration: none;
+        border-left: 2px solid rgb(167, 25, 25);
+        padding-left: 5px;
+    }
+
+    #banniereimage
+    {
+        display: none;
+    }
+
+    #section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+
+    #flèchebulle
+    {
+        display: none;
+    }
+
+    #zozorbg img
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+    #rs
+    {
+        text-align: center;
+    }
+    #footer
+    {
+        flex-direction: column;
+    }
+    #amis, #photos, #tweet
+    {
+        width: auto;
+    }
+
+
+}
